@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="body-main">
+        <header class="header" >
+            <h2>MY<span>Music</span></h2>
+        
+            <nav id="nav"> 
+            <ul class="ul">
+                  
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#secondsec">SONGs</a></li>
+            </ul>
+            </nav>
+            <button class="Upload">Upload</button>
+            
+              <div class="hamburger">
+                <div class="ham">
+                <i class="fa-solid fa-bars ham"></i>
+                </div>
+                </div>
+        </header>
+
+        <section class="Discover" id="home">
+          <div class="videoCont">
+            <h3><i>Discover & Stream</h3></i></h3>
+            <p></p>
+            <video width="100%"  id="videoPlayer" poster="placeholder.jpg" controls>
+                
+            </video>
+          </div>
+          <div class="play">
+                    <i class="fa-solid fa-play"></i>
+                    </div>
+
+        </section>
+
+        <section id="secondsec">
+            <div id="muc"><h2>MUSIC</h2></div>
+            <div class="flex">
+            <div class="container"  data-id="1">
+                <div class="image">
+                    <img class="imge"  src="./images/cover2.jpg"/>
+                </div>
+                <div class="text">
+             <p> <span class="title">The Journey</span></p>
+                <p class="text2">Artiste</p>
+                 <div class="medialine">
+                    <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                    </div>
+                    
+                    <hr>
+                    <hr class="line">
+                </div>
+                </div>
+                <div id="upDelbtn">
+                <button class="Up">Update</button>
+                </div>
+            </div>
+
+
+            <div class="container" data-id="2">
+                <div class="image">
+                    <img class="imge" src="./images/cover1.jpg"/>
+                </div>
+                <div class="text">
+             <p><span class="title"> Starlight</span></p>
+                <p class="text2">Artiste</p>
+                 <div class="medialine">
+                    <hr>
+                    <hr class="line">
+                    <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                </div>
+                <div id="upDelbtn">
+                <button class="Up">Upate</button>
+                </div>
+            </div>
+
+
+            <div class="container" data-id="3">
+                <div class="image">
+                    <img class="imge" src="./images/cover3.jpg"/>
+                </div>
+                <div class="text">
+             <p> <span class="title">Midnight City </span></p>
+                <p class="text2">Artiste</p>
+                 <div class="medialine">
+                    
+                    <hr>
+                    <hr class="line">
+                    <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                    </div>
+
+                </div>
+                </div>
+                <div id="upDelbtn">
+                <button class="Up">Update</button>
+                </div>
+            </div>
+
+
+            <div class="container" data-id="4">
+                <div class="image">
+                    <img class="imge" src="./images/cover4.jpg"/>
+                </div>
+                <div class="text">
+             <p><span class="title">Sunset vibe</span></p>
+                <p class="text2">Artiste</p>
+                <div class="medialine">
+                    
+                    <hr>
+                    <hr class="line">
+                    <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                    </div>
+
+                </div>
+                </div>
+                <div id="upDelbtn">
+                <button class="Up">Update</button>
+                </div>
+            </div>
+
+
+            <div class="container" data-id="5">
+                <div class="image">
+                    <img class="imge" src="./images/cover5.jpg"/>
+                </div>
+                <div class="text">
+             <p> <span class="title">High Life</span></p>
+                <p class="text2">Artiste</p>
+                <div class="medialine">
+                    <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                    </div>
+                    
+                    <hr>
+                    <hr class="line">
+
+                </div>
+                </div>
+                <div id="upDelbtn">
+                <button class="Up">Update</button>
+                </div>
+            </div>
+
+
+            <div class="container" data-id="6">
+                <div class="image">
+                    <img class="imge" src="./images/cover2.jpg"/>
+                </div>
+                <div class="text">
+             <p> <span class="title">The Journey</span></p>
+                <p class="text2">Artiste</p>
+                 <div class="medialine">
+                    <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                    </div>
+                    
+                    <hr>
+                    <hr class="line">
+                </div>
+                </div>
+                <div id="upDelbtn">
+                <button class="Up">update</button>
+                </div>
+            </div>
+
+            </div>
+ <div id="parentModal">
+                <div class="modal">
+                    <h4>Upload New Track</h4>
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <label>Artist Name
+                        <span class="spaceart"></span>
+                        <input type="text" name="artist" class="input" />
+                        </label>
+
+                        <span class="space"></span>
+
+                        <label>Song Title
+                        <span class="spaceart"></span>
+                        <input type="text" name="title" class="input" />
+                        </label>
+
+                        <span class="space"></span>
+
+                        <label>Audio File
+                        <input type="file" name="audio" class="but" accept="audio/*"/>
+                        </label>
+
+                        <span class="space"></span>
+
+                        <label>Cover Image
+                        <input type="file" name="cover" class="but" accept="image/*"/>
+                        </label>
+
+                        <span class="space"></span>
+
+                        <label>Video File
+                        <input type="file" name="video" class="but" accept="video/*"/>
+                        </label>
+
+                        <span class="space"></span>
+
+                        <button type="submit" class="submit">Submit</button>
+                        <button type="button" class="close">X</button>
+
+                    </form>
+                </div>
+
+            </div>
+            
+
+        </section>
+
+      
+        <hr class="outside">
+
+        
+
+
+
+        <footer class="foot">
+                        <svg class="wave" viewBox="0 0 500 50" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="waveGradient" x1=""0% y1="0%" x2=""100% y2="0%">  
+                    <stop offset="0%" stop-color="#505050"/>
+                    <stop offset="100%" stop-color="#000000"/>
+                </linearGradient>
+            </defs>
+
+            <path d="M0,30 C150,60 350,0 500,30 L500,50 L0,50 Z" fill="url(#waveGradient)"/>
+            </svg>
+            
+           
+            <div id="card"> 
+                 <h5><i>NOW PLAYING</i></h5>
+                  <div class="nowplaying">
+            <h5>NOW - PLAYING</h5>
+            <h6 id="Nowtitle">song-title</h6>
+            <p id="Nowartist">Artist</p>
+        </div>
+        <div class="manual"></div>
+                <hr class="cardLine" >
+                <div class="cardLine2" ></div>
+            <div class="circle1">
+                <img id="Nowcover" src="" alt="cover">
+            <div class="circle2"></div>
+        </div>
+        </div>
+
+       
+
+            <div class="styles"></div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <p class="p">@Icodetenmp</p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
