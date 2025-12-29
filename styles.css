@@ -317,6 +317,7 @@ footer{
     visibility: hidden;  
     position: relative;
     left: 10%;
+    margin-top: 125%;
 }
 #upDelbtn button:hover{
     transition: ease-in-out 0.3s;
@@ -500,7 +501,7 @@ label{
     animation: spin 4s linear infinite;
 }
 .circle2{
-    background: linear-gradient(to right, #645f5fa0, rgb(119, 105, 0)) ;
+    background: linear-gradient(to right, #2e2b2b, rgb(119, 105, 0)) ;
     width: 30px;
     height: 30px;
     border-radius: 50%;
