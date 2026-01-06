@@ -173,6 +173,7 @@ header button:hover{
     position: relative;
     border-radius: 5px;
     top: 90px;
+    
 }
 .container img{
     width: 100%;
@@ -357,6 +358,7 @@ footer{
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
     line-height: 23px;
+    z-index: 999;
     
  }
  #parentModal.show {
@@ -568,6 +570,7 @@ label{
     position: absolute;
     bottom: 7rem;
     margin-bottom: 7.4px;
+    display: none;
 
 
 }
@@ -594,7 +597,7 @@ label{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        /*background: linear-gradient(to right, #505050, #000000);*/
+        background: linear-gradient(to right, #505050, #000000);
         
     }
 
@@ -604,6 +607,7 @@ label{
     height: 100%;
     display: flex;       
     flex-direction: column;
+    
 
     }
 
@@ -638,6 +642,7 @@ label{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
     
     .ham :hover{
