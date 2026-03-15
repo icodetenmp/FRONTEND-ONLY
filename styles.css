@@ -173,6 +173,7 @@ header button:hover{
     position: relative;
     border-radius: 5px;
     top: 90px;
+
     
 }
 .container img{
@@ -297,12 +298,15 @@ footer{
 
 #upDelbtn{
     position: absolute;
-    top: 15%;
+    top: 145%;
     margin-left: 5px;
     font-size: 1px;
+    height: 50%;
     width: 150px;
     display: flex;
     justify-content: flex-start;
+    /*background-color: red;*/
+    
 }
 
 
@@ -314,11 +318,12 @@ footer{
     border: none;
     border-radius: 7px;
     width: 70px;
+    height: 20px;
     margin: 2px;
     visibility: hidden;  
     position: relative;
     left: 10%;
-    margin-top: 125%;
+    
 }
 #upDelbtn button:hover{
     transition: ease-in-out 0.3s;
@@ -589,7 +594,7 @@ label{
 
 
 
-@media (max-width: 600px){
+@media (max-width: 750px){
 
     body{
         height: 100vh;
@@ -734,7 +739,11 @@ label{
         padding-top: 6%;
     }
 
-    
+    #home{
+        background-color: #fff;
+        
+        
+    }
 
 
 

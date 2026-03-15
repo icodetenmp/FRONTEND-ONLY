@@ -98,19 +98,28 @@ form.addEventListener("submit", async (e) => {
             method: "PUT",
             body: formData
         });
+        console.log("Response status:", res.status);
 
-        if (!res.ok) throw new Error("Update failed");
+        if (!res.ok) {
+            const errorText = await res.text();
+            console.log('Eroor response:', errorText);
+            throw new Error("Update failed");
+        }
 
+        const updatedTrack = await res.json();
+        console.log("Updated:", updatedTrack);
+
+        await fetchTracks();   // ONE fetch, not 3
         closeModal();
         form.reset();
-        await fetchTracks();
 
         alert("Track updated successfully!");
     } catch (err) {
         console.error(err);
-        alert("Update failed");
+        alert("Update Failed");
     }
 });
+
 
 /* =========================
    FETCH TRACKS
@@ -183,7 +192,7 @@ async function fetchTracks() {
             audio.addEventListener("timeupdate", () => {
                 if (!audio.duration) return;
                 trackEl.querySelector(".line").style.width =
-                    (audio.currentTime / audio.duration * 100) + "%";
+                    (audio.currentTime / audio.duration * 80) + "%";
             });
             audio.addEventListener("ended", () => {
                 playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
