@@ -761,11 +761,16 @@ label{
     }
     #secondsec{
         width: 100%;
+        background: linear-gradient(to right, #aa875abb, #0b3c41e7), url(./images/yvette-de-wit-NYrVisodQ2M-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(20px);
+    
         
         
     }
     .container{
-        
         margin-top: 5%;
     }
 
