@@ -132,7 +132,8 @@ header button:hover{
     min-height: 500px;
     width: 100%;
     position: relative;
-    bottom: 10px;
+    bottom: 3px;
+    padding-left: 5%
 }
 #secondsec::-webkit-scrollbar{
     display: none;
@@ -762,12 +763,15 @@ label{
     }
     #secondsec{
         width: 100%;
-        background: linear-gradient(to right, #aa875abb, #0b3c41e7), url(./images/yvette-de-wit-NYrVisodQ2M-unsplash.jpg);
+        background: linear-gradient(to right, #d2b895e3, #000000cd), url(./images/yvette-de-wit-NYrVisodQ2M-unsplash.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         backdrop-filter: blur(20px);
         overflow: hidden;
+        display: flex;
+        justify-content: start;
+        padding: 3%;
     
     }
     .flex{
@@ -775,15 +779,16 @@ label{
     overflow-x: auto;
     flex-wrap: nowrap;
     scrollbar-width: none;  
-    padding-left: 82%;
-    gap: 30%;
-    margin-left: 10px;
-    width: 100vw;
+    padding-left: 24rem;
+    gap: 20px;
+    max-width: 50px;
+    padding-right: 0;
+    
     }
 
 
     #secondsec .image{
-        width: 100px;
+        width: 7rem;
         
     }
     .medialine{
