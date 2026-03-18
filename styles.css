@@ -618,9 +618,10 @@ label{
     }
 
      header{
-         background: linear-gradient(to right, #1f1e1e, #574f4f);
+         background: linear-gradient(to right, #1f1e1e59, #574f4fad);
          min-width: 100%;
          min-height: 60px;
+         backdrop-filter: blur(20px);
     }
     .header{
         display: flex;
@@ -776,13 +777,14 @@ label{
     }
     .flex{
     display: flex;
+    flex-direction: row;
+    justify-self: center;
     overflow-x: auto;
     flex-wrap: nowrap;
     scrollbar-width: none;  
-    padding-left: 24rem;
+    padding-left: 150px;
     gap: 20px;
-    width: 100%;
-    padding-right: 0;
+    min-width: 100%;
     
     }
     
@@ -804,7 +806,7 @@ label{
 
     .foot{
         min-width: 100%;
-        min-height: 30vh;
+        min-height: 200px;
         overflow: hidden;
     }
     footer{
