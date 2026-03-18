@@ -133,7 +133,7 @@ header button:hover{
     width: 100%;
     position: relative;
     bottom: 3px;
-    padding-left: 5%
+    padding-left: 1%
 }
 #secondsec::-webkit-scrollbar{
     display: none;
@@ -785,7 +785,10 @@ label{
     padding-right: 0;
     
     }
-
+    
+.flex::-webkit-scrollbar{
+    display: none;
+}
 
     #secondsec .image{
         width: 7rem;
