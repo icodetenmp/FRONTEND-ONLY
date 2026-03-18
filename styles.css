@@ -130,12 +130,9 @@ header button:hover{
     display: grid;
     justify-items: center;
     min-height: 500px;
-    overflow: hidden;
-    padding: 3%;    
-    overflow-y: hidden;
-    overflow-x: scroll;
-    
-    
+    width: 100%;
+    position: relative;
+    bottom: 10px;
 }
 #secondsec::-webkit-scrollbar{
     display: none;
@@ -173,6 +170,7 @@ header button:hover{
     position: relative;
     border-radius: 5px;
     top: 90px;
+    
 
     
 }
@@ -212,7 +210,8 @@ header button:hover{
     flex-direction: row;
     gap: 5%;
     justify-content: center;
-    
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 .medialine{
     background-color: rgb(201, 201, 201);
@@ -594,7 +593,7 @@ label{
 
 
 
-@media (max-width: 750px){
+@media (max-width: 934px){
 
     body{
         height: 100vh;
@@ -612,6 +611,7 @@ label{
     height: 100%;
     display: flex;       
     flex-direction: column;
+    background-color: #000;
     
 
     }
@@ -662,7 +662,8 @@ label{
     
     .videoCont{
         width: 100%;
-        max-width:  100%;
+        max-width:  100vw;
+        height: auto;
         margin: 0;
         padding: 0;
     }
@@ -766,18 +767,29 @@ label{
         background-size: cover;
         background-position: center;
         backdrop-filter: blur(20px);
+        overflow: hidden;
     
-        
+    }
+    .flex{
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;  
+    padding-left: 82%;
+    gap: 30%;
+    margin-left: 10px;
+    width: 100vw;
+    }
+
+
+    #secondsec .image{
+        width: 100px;
         
     }
-    .container{
-        margin-top: 5%;
+    .medialine{
+        width: 6rem;
     }
-
-
-
-
-    
+ 
 
     /*THIRD*/
 
@@ -821,7 +833,7 @@ label{
         height: 150px;
         padding: 0%;
         margin: 0%;
-        visibility: hidden;
+        visibility: visible;
     }
 
     .foot .cardLine{
