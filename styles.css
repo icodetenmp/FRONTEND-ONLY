@@ -781,7 +781,7 @@ label{
     scrollbar-width: none;  
     padding-left: 24rem;
     gap: 20px;
-    max-width: 50px;
+    width: 100%;
     padding-right: 0;
     
     }
@@ -804,7 +804,7 @@ label{
 
     .foot{
         min-width: 100%;
-        min-height: 24%;
+        min-height: 30vh;
         overflow: hidden;
     }
     footer{
