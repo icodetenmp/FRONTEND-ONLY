@@ -253,8 +253,8 @@ header button:hover{
 }
 .medialine .playbutton{
     position: absolute;
-    left: 0%;
-    top: 1.5px;
+    left: 2%;
+    top: 1px;
     font-size: 8px;
     color: #000000c2;
 }
@@ -715,15 +715,17 @@ label{
     }
 
     ul{
-        background-color: rgb(70, 63, 63);
+        background-color: rgba(70, 63, 63, 0.712);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        width: 50%;
+        width: 90px;
         height: 100%;
         text-align: center;
         padding-bottom: 10%;
-        border-radius: 10%;
+        border-radius: 5px;
         box-shadow: #000 2px 2px 5px;
         visibility: hidden;
 
@@ -741,9 +743,12 @@ label{
 
     a:hover{
         transition: ease-in-out 7ms;
-        box-shadow: #a27e4896 3px 2px 9px;
-        background-color: rgb(250, 245, 245);
-        padding-top: 6%;
+        box-shadow: #a27e4896 3px 2px 2px;
+        background-color: transparent;
+        padding: 2px 42px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     #home{
@@ -803,6 +808,7 @@ label{
     .medialine{
         width: 6rem;
     }
+
  
 
     /*THIRD*/
