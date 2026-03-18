@@ -623,6 +623,9 @@ label{
          min-height: 60px;
          backdrop-filter: blur(20px);
          -webkit-backdrop-filter: blur(20px);
+         border-radius: 0%;
+         border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     }
     .header{
         display: flex;
