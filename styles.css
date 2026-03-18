@@ -622,6 +622,7 @@ label{
          min-width: 100%;
          min-height: 60px;
          backdrop-filter: blur(20px);
+         -webkit-backdrop-filter: blur(20px);
     }
     .header{
         display: flex;
